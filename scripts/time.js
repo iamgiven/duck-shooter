@@ -1,6 +1,6 @@
 //SCRIPT PARA TEMPORIZADOR DEL JUEGO
 
-import { openPopup } from "/scripts/popup-script.js";
+import { openPopup } from "scripts/popup-script.js";
 
 document.getElementById("shoot-button").addEventListener("click", startTimer, {once: true}, console.log("check"));
 var time = 60;

@@ -1,4 +1,4 @@
-@import "/styles/common-styles.css";
+@import "styles/common-styles.css";
 
 html {
   font-family: "Bungee Spice", sans-serif;
@@ -56,7 +56,7 @@ body {
 .frame {
   height: 378px;
   width: 100%;
-  background: url(/Source-files/frame-background.png) center no-repeat;
+  background: url(Source-files/frame-background.png) center no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +144,7 @@ label {
   margin: 20px;
   width: 154px;
   height: 69px;
-  background: url(/Source-files/SVG/score-timer-area.svg);
+  background: url(Source-files/SVG/score-timer-area.svg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

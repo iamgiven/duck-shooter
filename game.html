@@ -14,11 +14,10 @@
 
 <body>
   <header class="settings">
-    <a href="/" class="restart bold-text1">Mulai Ulang</a>
+    <button onclick="location.reload()" class="restart bold-text1">Mulai Ulang</button>
     <button id="mute-button">
       <img id="play-icon" src="Source-files/play-icon.png" width="60" title="sound nonaktif" />
-      <img id="mute-icon" src="Source-files/mute.png" width="60" title="sound aktif" width="70"
-        style="display: none" />
+      <img id="mute-icon" src="Source-files/mute.png" width="60" title="sound aktif" style="display: none" />
     </button>
   </header>
   <section class="gamezone">
@@ -26,7 +25,7 @@
       <div class="scope" id="scope">
         <img class="target" src="Source-files/SVG/target.svg" width="40" alt="scope image" id="target">
         <audio id="sounDuck">
-        <source src="audio-game/audio-duck.mp3" type="audio/mpeg" />
+          <source src="audio-game/audio-duck.mp3" type="audio/mpeg" />
         </audio>
       </div>
       <div class="ducks" id="ducks">
@@ -36,22 +35,21 @@
         <div class="duck" id="duck2">
           <img src="Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
         </div>
-      <div class="duck" id="duck3">
+        <div class="duck" id="duck3">
           <img src="Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
         </div>
         <div class="duck" id="duck4">
-          <img src="Source-files/SVG/duck.svg"  alt="yellow toy duck image"/>
+          <img src="Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
         </div>
         <div class="duck" id="duck5">
-          <img src="Source-files/SVG/duck.svg"  alt="yellow toy duck image"/>
+          <img src="Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
         </div>
-        
       </div>
     </div>
   </section>
   <section class="vertical-stripes ">
     <div class="infogame">
-      <label class="bold-text" >Waktu:
+      <label class="bold-text">Waktu:
         <span id="time">60"</span>
       </label>
       <label class="score bold-text">Poin:
@@ -65,7 +63,7 @@
       </audio>
       <audio id="soundShoot">
         <source src="audio-game/gunshot.mp3" type="audio/mpeg" />
-        </audio>
+      </audio>
     </div>
   </section>
 
@@ -78,7 +76,7 @@
           <p class="p regular-text">Skor mu: </p>
           <h3><span id="scoreResult">0</span>POIN</h3>
         </div>
-        <button class="close bold-text1" id="restart">Mulai Ulang</button>
+        <button class="close bold-text1" id="restart" onclick="location.reload()">Mulai Ulang</button>
         <button class="close bold-text1" id="quit">Keluar</button>
         <button class="close bold-text1" id="nextLevel">Level berikutnya</button>
       </div>
@@ -90,7 +88,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="scripts/shootButton.js" type="module"></script>
   <script src="scripts/audio-game.js" type="module"></script>

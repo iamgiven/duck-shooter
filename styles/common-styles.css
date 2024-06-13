@@ -51,4 +51,5 @@
     background-color:var(--red);
     font-palette: --ButtonColor;
     font-size: 2em;
+    cursor: pointer
 }

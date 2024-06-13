@@ -1,4 +1,4 @@
-@import "common-styles.css";
+@import "/styles/common-styles.css";
 
 html {
   font-family: "Bungee Spice", sans-serif;
@@ -35,7 +35,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   cursor: pointer;
 }
 

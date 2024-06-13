@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duck Shooter</title>
+  <link rel="stylesheet" href="/styles/style-game.css" />
+  <link rel="stylesheet" href="/styles/popup-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="settings">
+    <button class="restart bold-text1"><a href="/game.html">Mulai Ulang</a></button>
+    <button id="mute-button">
+      <img id="play-icon" src="/Source-files/play-icon.png" width="60" title="sound nonaktif" />
+      <img id="mute-icon" src="/Source-files/mute.png" width="60" title="sound aktif" width="70"
+        style="display: none" />
+    </button>
+  </header>
+  <section class="gamezone">
+    <div class="frame">
+      <div class="scope" id="scope">
+        <img class="target" src="/Source-files/SVG/target.svg" width="40" alt="scope image" id="target">
+        <audio id="sounDuck">
+        <source src="/audio-game/audio-duck.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      <div class="ducks" id="ducks">
+        <div class="duck" id="duck1">
+          <img src="/Source-files/SVG/duck.svg" alt="yellow toy duck image" />
+        </div>
+        <div class="duck" id="duck2">
+          <img src="/Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
+        </div>
+      <div class="duck" id="duck3">
+          <img src="/Source-files/SVG/duck.svg" alt="yellow toy duck image"/>
+        </div>
+        <div class="duck" id="duck4">
+          <img src="/Source-files/SVG/duck.svg"  alt="yellow toy duck image"/>
+        </div>
+        <div class="duck" id="duck5">
+          <img src="/Source-files/SVG/duck.svg"  alt="yellow toy duck image"/>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="vertical-stripes ">
+    <div class="infogame">
+      <label class="bold-text" >Waktu:
+        <span id="time">60"</span>
+      </label>
+      <label class="score bold-text">Poin:
+        <span id="score">0</span>
+      </label>
+    </div>
+    <div class="control">
+      <button id="shoot-button" class="shoot bold-text1">Tembak</button>
+      <audio id="autoplay-audio" loop>
+        <source src="./audio-game/audio-game.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="soundShoot">
+        <source src="./audio-game/gunshot.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+  </section>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="congrats bold-text">
+          <h2>Selamat,</h2>
+          <h2 id="playerName">"PEMAIN"</h2> 
+          <p class="p regular-text">Skor mu: </p>
+          <h3><span id="scoreResult">0</span>POIN</h3>
+        </div>
+        <button class="close bold-text1" id="restart">Mulai Ulang</button>
+        <button class="close bold-text1" id="quit">Keluar</button>
+        <button class="close bold-text1" id="nextLevel">Level berikutnya</button>
+      </div>
+      <div class="popup-conf">
+        <canvas class="confetti" id="canvas"></canvas>
+        <audio id="applauseAudio">
+          <source src="audio-game\applause.mp3" type="audio/mpeg" muted>
+        </audio>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/scripts/shootButton.js" type="module"></script>
+  <script src="/scripts/audio-game.js" type="module"></script>
+  <script src="/scripts/time.js" type="module"></script>
+  <script src="popup-script.js" type="module"></script>
+</body>
+
+</html>

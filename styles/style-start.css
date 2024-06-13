@@ -1,6 +1,6 @@
 /*Mobile size*/
-@import "styles/common-styles.css";
-@import "styles/animation-start.css";
+@import "common-styles.css";
+@import "animation-start.css";
 
 html {
     background-color: var(--lightYellow);
@@ -64,7 +64,7 @@ body {
 main {
     height: 100%;
     padding: 20px;
-    background-image: url(Source-files/SVG/color-wheel-cropped.svg);
+    background-image: url('../Source-files/SVG/color-wheel-cropped.svg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -81,7 +81,7 @@ main {
 .welcome-sign {
     width: 285px;
     height: 250px;
-    background-image: url(Source-files/SVG/welcome-sign.svg);
+    background-image: url('../Source-files/SVG/welcome-sign.svg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +103,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(Source-files/SVG/rules-area.svg);
+    background-image: url('../Source-files/SVG/rules-area.svg');
     background-repeat: no-repeat;
     background-position: center;     
 }

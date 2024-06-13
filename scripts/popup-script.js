@@ -8,7 +8,7 @@ const quitButton = document.getElementById('quit');
 const nextLevelButton = document.getElementById('nextLevel');
 
 //retrieve player name from local storage
-const playerName = localStorage.getItem("name") || "JUGADOR!";
+const playerName = localStorage.getItem("name") || "PEMAIN!";
 
 export function openPopup() {
 //retrieve player score from local storage

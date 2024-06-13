@@ -1,4 +1,4 @@
-@import "styles/common-styles.css";
+@import "common-styles.css";
 
 .popup-overlay {
     display: none;
@@ -37,7 +37,7 @@
 .congrats {
     width: 310px;
     height: 252px;
-    background-image: url(Source-files/SVG/rules-area.svg);
+    background-image: url('../Source-files/SVG/rules-area.svg');
     background-size: 100%;
     background-position-y: center;
     background-repeat: no-repeat;

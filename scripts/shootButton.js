@@ -9,10 +9,8 @@ shootButton.addEventListener("click", shootFunction);
 
 
 function shootFunction () {
-    
     hitDuck();
     playAudio();
-
 }
 
     

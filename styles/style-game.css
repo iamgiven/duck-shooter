@@ -62,6 +62,7 @@ body {
 }
 
 .scope {
+  margin: 20px 0 0 0;
   display: flex;
   width: 370px;
   height: 40px;
@@ -71,15 +72,13 @@ body {
 } 
 
 .target {
-  margin-top: 20px;
   position: absolute;
   z-index: 3;
-  
+  top: 360px; /* Initial position for middle lane */
 }
 
 .ducks {
   width: 308px;
-  margin-left: 8px;
   z-index: 0;
   position: absolute;
   overflow: hidden;
@@ -90,12 +89,34 @@ body {
 .duck {
   width: 75px;
   position: relative;
-  /* margin-right: 30px; */
-  animation: move 6s infinite;
   animation-timing-function: linear;
 }
 
-@keyframes move {
+.ducks-up .duck {
+  animation: move-right-to-left 6s infinite linear;
+}
+
+.ducks-mid .duck {
+  animation: move-left-to-right 6s infinite linear;
+}
+
+.ducks-down .duck {
+  animation: move-right-to-left 6s infinite linear;
+}
+
+.ducks-up {
+  margin: 20px 0 0 0;
+}
+
+.ducks-mid {
+  margin: 100px 0 0 0;
+}
+
+.ducks-down {
+  margin: 180px 0 0 0;
+}
+
+@keyframes move-right-to-left {
   from {
     transform: translateX(350px);
   }
@@ -104,34 +125,48 @@ body {
   }
 }
 
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(350px);
+  }
+}
 
+/* Add more variability to the duck movement */
 .duck:nth-child(1) {
   animation-delay: 0.5s;
+  animation-duration: 5s; /* Randomize duration */
 }
 
 .duck:nth-child(2) {
   animation-delay: 1s;
+  animation-duration: 6s; /* Randomize duration */
 }
 
 .duck:nth-child(3) {
   animation-delay: 1.5s;
+  animation-duration: 4.5s; /* Randomize duration */
 }
 
 .duck:nth-child(4) {
   animation-delay: 2s;
+  animation-duration: 6.5s; /* Randomize duration */
 }
 
 .duck:nth-child(5) {
   animation-delay: 2.5s;
+  animation-duration: 5.5s; /* Randomize duration */
 }
 
 .duck img {
-  width: 75px;
+  width: 60px;
 }
   
 .vertical-stripes { 
-  
-  background: repeating-linear-gradient( 90deg, var(--lightYellow), var(--lightYellow) 30px, #eb7e83a1 30px, #eb7e83a1 60px) }
+  background: repeating-linear-gradient(90deg, var(--lightYellow), var(--lightYellow) 30px, #eb7e83a1 30px, #eb7e83a1 60px);
+}
 
 .infogame {
   display: flex;
@@ -150,11 +185,9 @@ label {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-align: center;
 }
 
 .control {
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -172,4 +205,22 @@ label {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.target-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.target-controls button {
+  width: 80px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: var(--red);
+  border: var(--blue) solid 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: white;
 }

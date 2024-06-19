@@ -190,15 +190,11 @@ label {
 .main-control {
   width: 100%;
   margin: 0 0 20px 0;
+  padding: 0 45px 0 50px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 25px;
-}
-
-.void {
-  width: 90px;
 }
 
 .control {
@@ -222,7 +218,7 @@ label {
 }
 
 .target-controls {
-  width: 85px;
+  width: 105px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,8 +238,8 @@ label {
 }
 
 .target-controls button {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   background-color: var(--red);
   border: var(--blue) solid 5px;
   border-radius: 100%;

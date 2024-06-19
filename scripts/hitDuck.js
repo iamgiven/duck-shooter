@@ -65,9 +65,9 @@ export function hitDuck() {
         }
     }
 
-    checkDucks(duckDivUp, "../assets/red-duck.png");
-    checkDucks(duckDivMid, "../assets/red-duck-reverse.png");
-    checkDucks(duckDivDown, "../assets/red-duck.png");
+    checkDucks(duckDivUp, "./assets/red-duck.png");
+    checkDucks(duckDivMid, "./assets/red-duck-reverse.png");
+    checkDucks(duckDivDown, "./assets/red-duck.png");
 }
 
 // Resurrect shooted ducks
@@ -91,9 +91,9 @@ function resurrectDuck() {
         }
     }
 
-    resetDucks(duckDivUp, "../assets/yellow-duck.png");
-    resetDucks(duckDivMid, "../assets/yellow-duck-reverse.png"); // Ensure it faces right
-    resetDucks(duckDivDown, "../assets/yellow-duck.png");
+    resetDucks(duckDivUp, "./assets/yellow-duck.png");
+    resetDucks(duckDivMid, "./assets/yellow-duck-reverse.png"); // Ensure it faces right
+    resetDucks(duckDivDown, "./assets/yellow-duck.png");
 
 
 }

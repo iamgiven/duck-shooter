@@ -187,6 +187,20 @@ label {
   text-align: center;
 }
 
+.main-control {
+  width: 100%;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.void {
+  width: 90px;
+}
+
 .control {
   display: flex;
   justify-content: space-around;
@@ -208,19 +222,44 @@ label {
 }
 
 .target-controls {
+  width: 85px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  gap: 5px;
+}
+
+.target-controls > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.target-controls > div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .target-controls button {
-  width: 80px;
-  height: 40px;
-  margin: 0 10px;
+  width: 45px;
+  height: 45px;
   background-color: var(--red);
   border: var(--blue) solid 5px;
-  border-radius: 5px;
+  border-radius: 100%;
   cursor: pointer;
   font-size: 1.2em;
   color: white;
+  display: grid;
+  place-items: center;
 }
+
+.target-controls > div:nth-child(1) > button > svg {
+  transform: rotate(45deg);
+}
+
+.target-controls > div:nth-child(2) > button > svg {
+  transform: rotate(-135deg);
+}
+
+
